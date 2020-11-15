@@ -153,34 +153,47 @@ button {
 .t-nav-list a:hover {
   background-color: #8cae47;
   }
+  /* ここからタイトル */
 .title{
   position: absolute;
   color: #fff;
   margin: 5px 10px;
+}
+/* ここからトップスライダー */
+.t-slider{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.slider-outer{
+  position: relative;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+.slider-inner{
+  position: absolute;
+  width: 450px;
+  height: 300px;
+}
+.slide-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: all 2s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 
-}
-.t-header{
-  /* background: red; */
-}
-.other_search{
-  display: flex;
-  flex-flow: row;
-}
+/* ここからフリーワード検索 */
 .free_search{
   background: greenyellow;
 }
-.main{
-  width: 50%;
-  background: hotpink;
-}
-.side{
-  width: 50%;
-  background: yellow;
-}
-footer{
-  background:skyblue; 
-}
-/* ここからフリーワード検索 */
 .word-search{
   top: 50%;
   left: 45%;
@@ -206,11 +219,25 @@ footer{
   padding: 0;
   cursor: pointer;
 }
+
 /* ここからカテゴリ検索 */
-
-
-/* ここからランキング */
-
+.other_search{
+  display: flex;
+  flex-flow: row;
+}
+.main{
+  width: 50%;
+  background: hotpink;
+}
+/* ここからランキング検索 */
+.side{
+  width: 50%;
+  background: yellow;
+}
 .ranking_1::before{
   content: "1位";
+}
+/* ここからフッター */
+footer{
+  background:skyblue; 
 }
