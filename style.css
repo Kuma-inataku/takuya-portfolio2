@@ -1,0 +1,25 @@
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.t-header{
+  background: red;
+}
+.other_search{
+  display: flex;
+}
+.free_search{
+  background: greenyellow;
+}
+.main{
+  width: 50%;
+  background: hotpink;
+}
+.side{
+  width: 50%;
+  background: yellow;
+}
+footer{
+  background:skyblue; 
+}
