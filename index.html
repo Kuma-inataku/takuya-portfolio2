@@ -9,26 +9,76 @@
 <body>
   <div class="wrapper">
     <header class="t-header">
-      <h1>邦ロックコンサル</h1>
-      <p>ようこそ、邦ロックの世界へ</p>
+      <!-- navbarは固定 -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="t-title">邦ロックコンサル</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="t-slider-wrap">
+        <ul class="t-slider-inner">
+          <li>
+            <img src="./images/top_image1.jpg" alt="">
+          </li>
+          <li>
+            <img src="./images/top_image2.jpg" alt="">
+          </li>
+          <li>
+            <img src="./images/top_image3.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <!-- navbarは固定 -->
+      <div class="t-subtitle">
+        <p>ようこそ、邦ロックの世界へ</p>
+        <p>困ったを即解決！</p>
+      </div>
     </header>
     <div class="container">
-      <div class="free_search">
+      <div class="t-free_search">
         <h2>フリーワード検索</h2>
-        <input type="text">
+        <form action="">
+          <button type="submit" class="word-submit"></button>
+          <input type="text" class="word-search" placeholder="キーワードを入力ください" name="freeword">
+        </form>
       </div>
       <div class="other_search">
         <div class="main">
           <h2>カテゴリ検索</h2>
-          <p>WANIMA</p>
+          <ul class="t-category">
+            <li>フェス 初心者</li>
+            <li>ライブ 初心者</li>
+            <li>フェス 注意点</li>
+            <li>日本の米は世界一</li>
+            <li>ツーステ</li>
+            <li>ROCKIN'ON JAPAN</li>
+          </ul>
         </div>
         <div class="side">
           <h2>「めっちゃE」ランキング検索</h2>
+          <ul>
+            <li class="ranking_1">【失敗しない！】初心者必見！フェスに持っていくもの10選！</li>
+            <li class="ranking_2">【これだけ気を付けよう！】フェスを楽しむための注意点3選！</li>
+            <li class="ranking_3">【完全攻略！】初心者邦ロックロードマップ！</li>
+          </ul>
         </div>
       </div>
     </div>
     <footer>
-      Footer
+      Copyright© 2020 Japanese Rock Consultant All Rights Reserved.
     </footer>
   </div>
 </body>

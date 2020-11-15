@@ -4,7 +4,7 @@
 }
 
 .t-header{
-  background: red;
+  /* background: red; */
 }
 .other_search{
   display: flex;
@@ -22,4 +22,38 @@
 }
 footer{
   background:skyblue; 
+}
+/* ここからフリーワード検索 */
+.word-search{
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px 10px 8px 40px;
+  font-size: 15px;
+  background: url(#) 10px center no-repeat;
+  background-size: 18px;
+  outline: none;
+}
+.word-submit{
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 50%;
+  z-index: 1;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+/* ここからカテゴリ検索 */
+
+
+/* ここからランキング */
+
+.ranking_1::before{
+  content: "1位";
 }
