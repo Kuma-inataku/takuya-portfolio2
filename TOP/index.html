@@ -13,7 +13,7 @@
   <div class="wrapper">
     <header class="t-header">
       <h1>
-        <a href="#" class="title">邦ロックコンサル</a>
+        <a href="#" class="title">J-Rock Consultant</a>
       </h1>
       <!-- navbarは固定 -->
       <nav>
@@ -34,30 +34,19 @@
                 <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="450" height="300">
               </div>
             </transition>
+            <div class="t-subtitle">
+              <div class="t-subtitle-comment">
+                <p>ようこそ、邦ロックの世界へ！</p>
+                <p>邦ロックのあらゆる「困った」を即解決！</p>
+              </div>
+            </div>      
           </div>
         </div>
       </div>
-      <!-- <div>
-        <ul>
-          <li>
-            <img src="./images/top_image1.jpg" alt="">
-          </li>
-          <li>
-            <img src="./images/top_image2.jpg" alt="">
-          </li>
-          <li>
-            <img src="./images/top_image3.jpg" alt="">
-          </li>
-        </ul>
-      </div> -->
       <!-- navbarは固定 -->
-      <div class="t-subtitle">
-        <p>ようこそ、邦ロックの世界へ</p>
-        <p>困ったを即解決！</p>
-      </div>
     </header>
     <div class="container">
-      <div class="t-free_search">
+      <div class="t-c-search">
         <h2>フリーワード検索</h2>
         <form action="">
           <button type="submit" class="word-submit"></button>
@@ -67,30 +56,54 @@
       <div class="other_search">
         <div class="main">
           <h2>カテゴリ検索</h2>
-          <ul class="t-category">
-            <li>フェス 初心者</li>
-            <li>ライブハウス 初心者</li>
-            <li>フェス 注意点</li>
-            <li>日本の米は世界一</li>
-            <li>ツーステ</li>
-            <li>ROCKIN'ON JAPAN</li>
+          <ul class="t-m-category">
+            <li>
+              <a href="">フェス 初心者</a>
+            </li>
+            <li>
+              <a href="">ライブハウス 初心者</a>
+            </li>
+            <li>
+              <a href="">フェス 注意点</a>
+            </li>
+            <li>
+              <a href="">ツーステ</a>
+            </li>
+            <li>
+              <a href="">ROCKIN'ON JAPAN</a>
+            </li>
+            <li>
+              <a href="">日本の米は世界一</a>
+            </li>
           </ul>
         </div>
         <div class="side">
           <h2>「めっちゃE」ランキング検索</h2>
-          <ul>
-            <li class="ranking_1">【失敗しない！】初心者必見！フェスに持っていくもの10選！</li>
-            <li class="ranking_2">【これだけ気を付けよう！】フェスを楽しむための注意点3選！</li>
-            <li class="ranking_3">【完全攻略！】初心者邦ロックロードマップ！</li>
+          <ul class="t-s-search">
+            <li class="ranking_1">
+              <a href="#">【失敗しない！】初心者必見！フェスに持っていくもの10選！
+              </a>
+            </li>
+            <li class="ranking_2">
+              <a href="#"> 【これだけ気を付けよう！】フェスを楽しむための注意点3選！</a>
+            </li>
+            <li class="ranking_3">
+              <a href="#">【完全攻略！】初心者邦ロックロードマップ！</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <footer>
       <p>Copyright© 2020 Japanese Rock Consultant All Rights Reserved.</p>
-      <a href="#">
-        <img src="./images/twitter.png" alt="">
-      </a>
+      <div>
+        <a href="#">
+          <img src="./images/twitter.jpg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/instagram.jpg" alt="">
+        </a>
+      </div>
     </footer>
   </div>
 </body>

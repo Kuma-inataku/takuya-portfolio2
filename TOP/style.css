@@ -29,7 +29,7 @@ time, mark, audio, video {
 body {
  /* プロジェクトによって変動 */
  min-width: 1000px;
- color: #000;
+ color: #333;
  line-height: 1.6;
  font-weight: 400;
  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
@@ -130,7 +130,7 @@ button {
 
 /* ここからstyle.css */
 .wrapper{
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
 }
 /* ここからナビバー */
@@ -168,19 +168,19 @@ button {
 }
 .slider-outer{
   position: relative;
-  width: 450px;
-  height: 300px;
+  width: 1000px;
+  height: 600px;
   overflow: hidden;
   margin: 0 auto 20px;
 }
 .slider-inner{
   position: absolute;
-  width: 450px;
-  height: 300px;
+  width: 1000px;
+  height: 600px;
 }
 .slide-img {
-  width: 450px;
-  height: 300px;
+  width: 1000px;
+  height: 600px;
   object-fit: cover;
 }
 .fade-enter-active, .fade-leave-active {
@@ -189,21 +189,43 @@ button {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+.t-subtitle{
+  position: relative;
+  top: 75%;
+  left: 5%;
+  background-color:rgba(255,255,255,0.7);
+  width: 350px;
+  height: 100px;
+}
+.t-subtitle-comment{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 350px;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+}
 
 /* ここからフリーワード検索 */
-.free_search{
-  background: greenyellow;
+.t-c-search{
+  border-bottom: 2px solid #ccc;
+}
+h2{
+  margin-bottom: 30px;
 }
 .word-search{
   top: 50%;
   left: 45%;
   transform: translateY(-50%);
-  width: 200px;
+  width: 400px;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 8px 10px 8px 40px;
   font-size: 15px;
-  background: url(./images/search.png) 10px center no-repeat;
+  background: url(./images/search.jpg) 10px center no-repeat;
   background-size: 18px;
   outline: none;
 }
@@ -227,17 +249,49 @@ button {
 }
 .main{
   width: 50%;
-  background: hotpink;
+}
+.t-m-category{
+  display: flex;
+  flex-wrap: wrap;
+  /* white-space: nowrap; */
+}
+.t-m-category li{
+  background:rgb(230, 230, 230, 0.8);
+  margin: 10px;
+  padding: 10px;
 }
 /* ここからランキング検索 */
 .side{
   width: 50%;
-  background: yellow;
+  border-left: 2px solid #ccc;
+}
+.t-s-search{
+  background:rgb(230, 230, 230, 0.8);
+  margin-left: 10px;
+  padding-top: 10px;
+  display: inline-block;
+}
+.t-s-search li{
+  margin-bottom: 10px;
+}
+.ranking_1{
+  border-bottom: 1px dotted #000;
+}
+.ranking_2{
+  border-bottom: 1px dotted #000;
 }
 .ranking_1::before{
   content: "1位";
 }
+.ranking_2::before{
+  content: "2位";
+}
+.ranking_3::before{
+  content: "3位";
+}
 /* ここからフッター */
 footer{
-  background:skyblue; 
+  color: #fff;
+  background:#000; 
+  text-align: center;
 }

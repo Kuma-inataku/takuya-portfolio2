@@ -4,8 +4,8 @@ window.onload=function(){
     data: {
       current_slide: 0,
       slides: [
-        {img: './images/2046690_s.jpg'},
-        {img: './images/2337957_s.jpg'},
+        {img: './images/live1.jpg'},
+        {img: './images/live2.jpg'},
         {img: './images/top_image3.jpg'}
       ],
     },
