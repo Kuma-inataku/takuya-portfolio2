@@ -209,9 +209,11 @@ button {
   text-align: center;/*一応BOX内の文字も中央寄せ*/
 }
 
+/* ここからサイドバー */
+
 /* ここからフリーワード検索 */
 .t-c-search{
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px dotted #ccc;
 }
 h2{
   margin-bottom: 30px;
@@ -220,7 +222,7 @@ h2{
   top: 50%;
   left: 45%;
   transform: translateY(-50%);
-  width: 400px;
+  width: 200px;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 8px 10px 8px 40px;
@@ -241,19 +243,22 @@ h2{
   padding: 0;
   cursor: pointer;
 }
-
-/* ここからカテゴリ検索 */
-.other_search{
+/* ここからリストページ */
+.search{
   display: flex;
   flex-flow: row;
 }
 .main{
-  width: 50%;
+  width: 70%;
+  background: chartreuse;
+}
+/* ここからカテゴリ検索 */
+.category{
+  border-bottom: 2px dotted #ccc;
 }
 .t-m-category{
   display: flex;
   flex-wrap: wrap;
-  /* white-space: nowrap; */
 }
 .t-m-category li{
   background:rgb(230, 230, 230, 0.8);
@@ -261,9 +266,11 @@ h2{
   padding: 10px;
 }
 /* ここからランキング検索 */
+/* LIST,DETAILはランキング消すのアリ */
+
 .side{
-  width: 50%;
-  border-left: 2px solid #ccc;
+  width: 30%;
+  /* background: skyblue; */
 }
 .t-s-search{
   background:rgb(230, 230, 230, 0.8);
@@ -289,6 +296,8 @@ h2{
 .ranking_3::before{
   content: "3位";
 }
+/* LIST,DETAILはランキング消すのアリ */
+
 /* ここからフッター */
 footer{
   color: #fff;
