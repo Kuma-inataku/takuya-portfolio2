@@ -168,18 +168,18 @@ button {
 }
 .slider-outer{
   position: relative;
-  width: 1000px;
+  width: 100%;
   height: 600px;
   overflow: hidden;
   margin: 0 auto 20px;
 }
 .slider-inner{
   position: absolute;
-  width: 1000px;
+  width: 100%;
   height: 600px;
 }
 .slide-img {
-  width: 1000px;
+  width: 100%;
   height: 600px;
   object-fit: cover;
 }
@@ -208,7 +208,19 @@ button {
   font-weight: bold;
   text-align: center;/*一応BOX内の文字も中央寄せ*/
 }
-
+.l-result-sub{
+  display: flex;
+  justify-content: space-between;
+}
+.l-list{
+  border-bottom: 1px dotted #ccc;
+}
+.l-content{
+  display: flex;
+}
+.l-img img{
+  width: 200px;
+}
 /* ここからサイドバー */
 
 /* ここからフリーワード検索 */
