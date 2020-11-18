@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIST 邦ロックコンサル</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script type="text/javascript" src="../main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- headerは固定 -->
+    <header class="t-header">
+      <h1>
+        <a href="#" class="title">J-Rock Consultant</a>
+      </h1>
+      <nav>
+        <ul class="t-nav-list">
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="t-slider">
+        <div id="app">
+          <div class="slider-outer">
+            <transition name="fade">
+              <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
+                <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="450" height="300">
+              </div>
+            </transition>
+            <div class="t-subtitle">
+              <div class="t-subtitle-comment">
+                <p>ようこそ、邦ロックの世界へ！</p>
+                <p>邦ロックの「困った」を即解決！</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- headerは固定 -->
+    <div class="container">
+      <div class="search">
+        <div class="main">
+          <div class="l-result">  
+            <h2>検索結果</h2>
+            <p>「○○」の検索結果：<span class="l-result-num">5</span>件</p>
+            <div class="l-result-sub">
+              <p><span class="l-result-num">5</span>件の内、<span class="l-result-num-1st">1</span>～<span class="l-result-num-1st">5</span>件を表示</p>
+              <a href="#">TOPへ戻る</a>
+            </div>
+          </div>
+            <div class="l-list">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="l-content">
+                      <div class="l-img">
+                        <img src="../images/top_image1.jpg" alt="">
+                      </div>
+                      <div class="l-detail">
+                        <h3 class="l-title">テスト</h3>
+                        <p>テストテストテストテストテストテストテストテストテストテストテスト</p>
+                        <p class="l-fav">"○○"いいね！</p>
+                        <img src="../images/good1.png" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="l-content">
+                      <div class="l-img">
+                        <img src="../images/top_image1.jpg" alt="">
+                      </div>
+                      <div class="l-detail">
+                        <h3 class="l-title">テスト</h3>
+                        <p>テストテストテストテストテストテストテストテストテストテストテスト</p>
+                        <p class="l-fav">"○○"いいね！</p>
+                        <img src="../images/good1.png" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="l-content">
+                      <div class="l-img">
+                        <img src="../images/top_image1.jpg" alt="">
+                      </div>
+                      <div class="l-detail">
+                        <h3 class="l-title">テスト</h3>
+                        <p>テストテストテストテストテストテストテストテストテストテストテスト</p>
+                        <p class="l-fav">"○○"いいね！</p>
+                        <img src="../images/good1.png" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="l-content">
+                      <div class="l-img">
+                        <img src="../images/top_image1.jpg" alt="">
+                      </div>
+                      <div class="l-detail">
+                        <h3 class="l-title">テスト</h3>
+                        <p>テストテストテストテストテストテストテストテストテストテストテスト</p>
+                        <p class="l-fav">"○○"いいね！</p>
+                        <img src="../images/good1.png" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="l-content">
+                      <div class="l-img">
+                        <img src="../images/top_image1.jpg" alt="">
+                      </div>
+                      <div class="l-detail">
+                        <h3 class="l-title">テスト</h3>
+                        <p>テストテストテストテストテストテストテストテストテストテストテスト</p>
+                        <p class="l-fav">"○○"いいね！</p>
+                        <img src="../images/good1.png" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="l-page">前 | 1 | 2 | 3 | 4 | 5 | 次</p>
+        </div>
+        <div class="side">
+          <div class="t-c-search">
+            <h2>フリーワード検索</h2>
+            <form action="">
+              <button type="submit" class="word-submit"></button>
+              <input type="text" class="word-search" placeholder="キーワードを入力ください" name="freeword">
+            </form>
+          </div>
+          <div class="category">
+            <h2>カテゴリ検索</h2>
+            <ul class="t-m-category">
+              <li>
+                <a href="">フェス 初心者</a>
+              </li>
+              <li>
+                <a href="">ライブハウス 初心者</a>
+              </li>
+              <li>
+                <a href="">フェス 注意点</a>
+              </li>
+              <li>
+                <a href="">ツーステ</a>
+              </li>
+              <li>
+                <a href="">ROCKIN'ON JAPAN</a>
+              </li>
+              <li>
+                <a href="">日本の米は世界一</a>
+              </li>
+            </ul>
+          </div>
+          <!-- LIST,DETAILはランキング消すのアリ -->
+          <div class="ranking">
+            <h2>「めっちゃE」ランキング検索</h2>
+            <ul class="t-s-search">
+              <li class="ranking_1">
+                <a href="#">【失敗しない！】初心者必見！フェスに持っていくもの10選！
+                </a>
+              </li>
+              <li class="ranking_2">
+                <a href="#"> 【これだけ気を付けよう！】フェスを楽しむための注意点3選！</a>
+              </li>
+              <li class="ranking_3">
+                <a href="#">【完全攻略！】初心者邦ロックロードマップ！</a>
+              </li>
+            </ul>  
+          </div>
+          <!-- LIST,DETAILはランキング消すのアリ -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright© 2020 Japanese Rock Consultant All Rights Reserved.</p>
+      <div>
+        <a href="#">
+          <img src="../images/twitter.jpg" alt="">
+        </a>
+        <a href="#">
+          <img src="../images/instagram.jpg" alt="">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
