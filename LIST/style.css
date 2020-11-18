@@ -208,18 +208,48 @@ button {
   font-weight: bold;
   text-align: center;/*一応BOX内の文字も中央寄せ*/
 }
+/* ここからリストページ */
+.container{
+  background: rgb(142, 192, 229);
+  /* rgb(255, 228, 150)との交互に */
+  color: #333;
+}
+.main{
+  width: 70%;
+  margin: 0 80px 0 30px;
+  /* background: chartreuse; */
+}
+.l-result span{
+  font-weight: bold;
+}
 .l-result-sub{
   display: flex;
   justify-content: space-between;
 }
-.l-list{
-  border-bottom: 1px dotted #ccc;
+.l-list li{
+  /* margin: 10px 0; */
+  padding: 10px 0;
+  border-bottom: 3px dotted #ccc;
 }
 .l-content{
   display: flex;
 }
 .l-img img{
   width: 200px;
+}
+.l-detail{
+  margin-left: 20px;
+}
+.l-title{
+  color: #0066CC;
+}
+.l-fav{
+  background: beige;
+  display: inline-block;
+}
+.l-page{
+  margin: 20px 0;
+  text-align: center;
 }
 /* ここからサイドバー */
 
@@ -229,19 +259,6 @@ button {
 }
 h2{
   margin-bottom: 30px;
-}
-.word-search{
-  top: 50%;
-  left: 45%;
-  transform: translateY(-50%);
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 8px 10px 8px 40px;
-  font-size: 15px;
-  background: url(../images/search.jpg) 10px center no-repeat;
-  background-size: 18px;
-  outline: none;
 }
 .word-submit{
   top: 50%;
@@ -255,14 +272,24 @@ h2{
   padding: 0;
   cursor: pointer;
 }
-/* ここからリストページ */
+.word-search{
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px 10px 8px 40px;
+  font-size: 15px;
+  background: url(../images/search.jpg) 10px center no-repeat;
+  background-color: beige;
+
+  background-size: 18px;
+  outline: none;
+}
 .search{
   display: flex;
   flex-flow: row;
-}
-.main{
-  width: 70%;
-  background: chartreuse;
 }
 /* ここからカテゴリ検索 */
 .category{
@@ -282,6 +309,7 @@ h2{
 
 .side{
   width: 30%;
+  margin: 0 30px 0 0;
   /* background: skyblue; */
 }
 .t-s-search{
