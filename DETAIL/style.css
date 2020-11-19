@@ -214,7 +214,8 @@ button {
 /* ここからリストページ */
 .container{
   background: rgb(142, 192, 229);
-  /* rgb(255, 228, 150)との交互に */
+  /* ↑↓を交互に */
+  background: rgb(255, 228, 150);
   color: #333;
 }
 .search{
