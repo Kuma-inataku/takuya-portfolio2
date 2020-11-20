@@ -219,22 +219,12 @@ button {
 }
 @-webkit-keyframes bg-color {
   0% { background-color:#fbc2eb; }
-  /* 20% { background-color: #f1c40f; } */
-  /* 40% { background-color: #1abc9c; } */
   50% { background-color: #a6c1ee; }
-  /* 60% { background-color: #3498db; } */
-  /* 80% { background-color: #9b59b6; } */
-  /* 100% { background-color: rgb(142, 192, 229) ; } */
   100% { background-color:#fbc2eb; }
 }
 @keyframes bg-color {
   0% { background-color:#a1c4fd; }
-  /* 20% { background-color: #f1c40f; } */
-  /* 40% { background-color: #1abc9c; } */
   50% { background-color: #c2e9fb; }
-  /* 60% { background-color: #3498db; } */
-  /* 80% { background-color: #9b59b6; } */
-  /* 100% { background-color: rgb(142, 192, 229) ; } */
   100% { background-color:#a1c4fd; }
 }
 
