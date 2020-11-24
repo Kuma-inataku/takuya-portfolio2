@@ -44,17 +44,18 @@
       </div>
     </header>
     <!-- headerは固定 -->
+    <div id="app2">
     <div class="container">
       <div class="t-c-search">
-        <h2>フリーワード検索</h2>
-        <form action="../LIST/index.html">
-          <button type="submit" class="word-submit"></button>
-          <input type="text" class="word-search" placeholder="キーワードを入力ください" name="freeword">
-        </form>
-      </div>
-      <div class="other_search">
-        <div class="main">
-          <h2>カテゴリ検索</h2>
+          <h2>フリーワード検索</h2>
+          <form action="">
+            <button type="submit" class="word-submit"></button>
+            <input type="text" class="word-search" v-model="keyword" placeholder="キーワードを入力ください" name="freeword">
+          </form>
+        </div>
+        <div class="other_search">
+          <div class="main">
+            <h2>カテゴリ検索</h2>
           <ul class="t-m-category">
             <li>
               <a href="">フェス 初心者</a>
@@ -92,7 +93,20 @@
           </ul>
         </div>
       </div>
+      <div id="app">
+          <div class="aaa" v-for="user in filteredUsers">
+            <a href="#">
+              <img src="../images/top_image6.jpg" alt="">
+              <div>
+                <p v-text="user.id"></p>
+                <h3 v-text="user.title"></h3>
+                <p v-text="user.content"></p>
+              </div>
+            </a>
+          </div>
+      </div>
     </div>
+  </div>
     <footer>
       <p>Copyright© 2020 Japanese Rock Consultant All Rights Reserved.</p>
       <div>
@@ -105,5 +119,6 @@
       </div>
     </footer>
   </div>
+  
 </body>
 </html>
